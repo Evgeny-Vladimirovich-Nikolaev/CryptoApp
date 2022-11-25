@@ -1,0 +1,7 @@
+~/AndroidStudioProjects/SryptoApp/build.gradle
+    Warning:Warning:line (4)Kotlin version that is used for building with Gradle (1.7.20) differs from the one bundled into the IDE plugin (1.6.21)
+~/AndroidStudioProjects/SryptoApp/app/build.gradle
+    Warning:Warning:line (75)Plugin version (1.7.20) is not the same as library version (1.7.21)
+    Warning:Warning:line (75)A newer version of org.jetbrains.kotlin:kotlin-stdlib than 1.7.20 is available: 1.7.21
+    Warning:Warning:line (85)Assignment is not used
+    Warning:Warning:line (93)Use the Lifecycle Java 8 API provided by the `lifecycle-common-java8` library instead of Lifecycle annotations for faster incremental build.

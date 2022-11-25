@@ -1,9 +1,27 @@
+
+
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'kotlin-android'
     id 'kotlin-kapt'
- }
+
+    id 'com.google.devtools.ksp' version '1.7.20-1.0.7'
+
+    id 'idea'
+
+
+}
+
+idea {
+    module {
+        // Not using += due to https://github.com/gradle/gradle/issues/8749
+        sourceDirs = sourceDirs + file('build/generated/ksp/main/kotlin') // or tasks["kspKotlin"].destination
+        testSourceDirs = testSourceDirs + file('build/generated/ksp/test/kotlin')
+        generatedSourceDirs = generatedSourceDirs + file('build/generated/ksp/main/kotlin') + file('build/generated/ksp/test/kotlin')
+    }
+}
+
 
 android {
     namespace 'com.example.sryptoapp'
@@ -34,6 +52,13 @@ android {
     }
 }
 
+kotlin {
+    sourceSets {
+        main.kotlin.srcDirs += 'build/generated/ksp/main/kotlin'
+        test.kotlin.srcDirs += 'build/generated/ksp/test/kotlin'
+    }
+}
+
 dependencies {
 
     implementation 'androidx.core:core-ktx:1.9.0'
@@ -44,6 +69,16 @@ dependencies {
     implementation 'io.reactivex.rxjava3:rxjava:3.1.5'
     implementation 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.7.0'
+
+    implementation 'com.google.devtools.ksp:symbol-processing-api:1.7.20-1.0.7'
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.7.20"
+    //implementation project(':test-processor')
+//    ksp project(':test-processor')
+
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.7.21'
+    //implementation project(':test-processor')
+//    ksp project(':test-processor')
 
 
     def lifecycle_version = "2.5.1"
