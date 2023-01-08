@@ -1,0 +1,18 @@
+~/AndroidStudioProjects/SryptoApp/app/src/main/res/values/themes.xml
+    Warning:Warning:line (1)Namespace declaration is never used
+~/AndroidStudioProjects/SryptoApp/app/src/main/res/values-night/themes.xml
+    Warning:Warning:line (1)Namespace declaration is never used
+~/AndroidStudioProjects/SryptoApp/app/src/main/java/com/example/sryptoapp/pojo/CoinInfo.kt
+    Warning:Warning:line (3)Unused import directive
+~/AndroidStudioProjects/SryptoApp/app/src/main/java/com/example/sryptoapp/pojo/CoinPriceInfo.kt
+    Warning:Warning:line (10)Class "CoinPriceInfo" is never used
+~/AndroidStudioProjects/SryptoApp/app/src/main/java/com/example/sryptoapp/pojo/CoinInfoListOfData.kt
+    Warning:Warning:line (10)Class "CoinInfoListOfData" is never used
+~/AndroidStudioProjects/SryptoApp/app/src/main/java/com/example/sryptoapp/pojo/CoinPriceInfoRawData.kt
+    Warning:Warning:line (7)Class "CoinPriceInfoRawData" is never used
+~/AndroidStudioProjects/SryptoApp/app/src/main/AndroidManifest.xml
+    Warning:Warning:line (6)Unknown attribute android:allowBackup
+    Warning:Warning:line (7)Unknown attribute android:dataExtractionRules
+    Warning:Warning:line (8)Unknown attribute android:fullBackupContent
+    Warning:Warning:line (11)Unknown attribute android:roundIcon
+    Warning:Warning:line (12)Unknown attribute android:supportsRtl

@@ -1,0 +1,13 @@
+~/AndroidStudioProjects/SryptoApp/app/src/main/AndroidManifest.xml
+    Warning:Warning:line (8)Unknown attribute android:allowBackup
+    Warning:Warning:line (9)Unknown attribute android:dataExtractionRules
+    Warning:Warning:line (10)Unknown attribute android:fullBackupContent
+    Warning:Warning:line (13)Unknown attribute android:roundIcon
+    Warning:Warning:line (14)Unknown attribute android:supportsRtl
+~/AndroidStudioProjects/SryptoApp/app/src/main/java/com/example/sryptoapp/api/ApiService.kt
+    Warning:Warning:line (12)Function "getTopCoinsInfo" is never used
+~/AndroidStudioProjects/SryptoApp/app/build.gradle
+    Warning:Warning:line (75)Plugin version (1.7.20) is not the same as library version (1.7.21)
+    Warning:Warning:line (75)A newer version of org.jetbrains.kotlin:kotlin-stdlib than 1.7.20 is available: 1.7.21
+    Warning:Warning:line (85)Assignment is not used
+    Warning:Warning:line (93)Use the Lifecycle Java 8 API provided by the `lifecycle-common-java8` library instead of Lifecycle annotations for faster incremental build.
